@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "b149af7c-87f6-41b7-9455-4b3a86b6eef0",
+		"name": "Proxy Server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4200603"
+	},
+	"item": [
+		{
+			"name": "api meteors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/meteors?date=2024-10-10&count=true",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "4000",
+					"path": ["api", "meteors"],
+					"query": [
+						{
+							"key": "date",
+							"value": "2024-10-10"
+						},
+						{
+							"key": "count",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "meteors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/meteors",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "4000",
+					"path": ["meteors"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api rover image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"api_key\": \"1NZaf5OlxNeQ8ORdO8CWvdDRWrCVT52kDr4Kmrid\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/rovers/image",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "4000",
+					"path": ["api", "rovers", "image"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rover image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"api_key\": \"1NZaf5OlxNeQ8ORdO8CWvdDRWrCVT52kDr4Kmrid\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/rovers/image",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "4000",
+					"path": ["rovers", "image"]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rover image form",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"api_key\": \"1NZaf5OlxNeQ8ORdO8CWvdDRWrCVT52kDr4Kmrid\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/rovers/image-form",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "4000",
+					"path": ["rovers", "image-form"]
+				}
+			},
+			"response": []
+		}
+	]
+}
